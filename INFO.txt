@@ -1,0 +1,200 @@
+1. Encrypt File
+Purpose:
+Encrypts a file using AES encryption.
+
+Steps:
+
+Click the Encrypt File button.
+
+Select the file you want to encrypt (e.g., example.txt).
+
+Enter a password when prompted (e.g., MySecurePassword123).
+
+The file will be encrypted and saved as example.txt.enc. The original file will be deleted.
+
+Example:
+
+Input File: example.txt (contains "Hello, World!")
+
+Password: MySecurePassword123
+
+Output File: example.txt.enc
+
+2. Decrypt File
+Purpose:
+Decrypts a file that was previously encrypted using AES.
+
+Steps:
+
+Click the Decrypt File button.
+
+Select the encrypted file (e.g., example.txt.enc).
+
+Enter the same password used for encryption (e.g., MySecurePassword123).
+
+The file will be decrypted and saved as example.txt. The encrypted file will be deleted.
+
+Example:
+
+Input File: example.txt.enc
+
+Password: MySecurePassword123
+
+Output File: example.txt (contains "Hello, World!")
+
+3. Generate RSA Keys
+Purpose:
+Generates a pair of RSA keys (public and private) for secure key exchange.
+
+Steps:
+
+Click the Generate RSA Keys button.
+
+Enter a filename for the keys (e.g., my_keys).
+
+Two files will be created:
+
+my_keys_public.pem (public key)
+
+my_keys_private.pem (private key)
+
+Example:
+
+Filename: my_keys
+
+Output Files:
+
+my_keys_public.pem
+
+my_keys_private.pem
+
+4. Create ACL
+Purpose:
+Creates an Access Control List (ACL) for a file to manage user permissions.
+
+Steps:
+
+Click the Create ACL button.
+
+Select the file for which you want to create an ACL (e.g., example.txt).
+
+Enter a list of usernames separated by spaces (e.g., alice bob).
+
+An ACL file will be created as example.txt.acl.
+
+Example:
+
+File: example.txt
+
+Users: alice bob
+
+Output File: example.txt.acl (contains ACL permissions for alice and bob)
+
+5. Grant Access
+Purpose:
+Grants specific permissions (read, write, execute) to a user for a file.
+
+Steps:
+
+Click the Grant Access button.
+
+Select the file for which you want to grant access (e.g., example.txt).
+
+Enter the username (e.g., alice).
+
+Enter the permission to grant (e.g., read).
+
+The ACL file (example.txt.acl) will be updated with the new permission.
+
+Example:
+
+File: example.txt
+
+User: alice
+
+Permission: read
+
+Updated ACL: alice now has read permission.
+
+6. Verify Integrity
+Purpose:
+Verifies the integrity of a file by comparing its SHA-256 hash to an expected hash.
+
+Steps:
+
+Click the Verify Integrity button.
+
+Select the file to verify (e.g., example.txt).
+
+Enter the expected SHA-256 hash (e.g., 2ef7bde608ce5404e97d5f042f95f89f1c232871).
+
+A message will indicate whether the integrity is verified or compromised.
+
+Example:
+
+File: example.txt
+
+Expected Hash: 2ef7bde608ce5404e97d5f042f95f89f1c232871
+
+Output: "Integrity verified." or "Integrity compromised."
+
+7. Secure Delete
+Purpose:
+Securely deletes a file by overwriting it multiple times before deletion.
+
+Steps:
+
+Click the Secure Delete button.
+
+Select the file to delete (e.g., example.txt).
+
+The file will be securely deleted.
+
+Example:
+
+File: example.txt
+
+Output: File is permanently deleted.
+
+Example Workflow
+Encrypt a File:
+
+Click Encrypt File → Select example.txt → Enter password MySecurePassword123.
+
+Output: example.txt.enc.
+
+Decrypt the File:
+
+Click Decrypt File → Select example.txt.enc → Enter password MySecurePassword123.
+
+Output: example.txt (original content restored).
+
+Generate RSA Keys:
+
+Click Generate RSA Keys → Enter filename my_keys.
+
+Output: my_keys_public.pem and my_keys_private.pem.
+
+Create ACL:
+
+Click Create ACL → Select example.txt → Enter users alice bob.
+
+Output: example.txt.acl.
+
+Grant Access:
+
+Click Grant Access → Select example.txt → Enter user alice → Enter permission read.
+
+Output: alice now has read permission in example.txt.acl.
+
+Verify Integrity:
+
+Click Verify Integrity → Select example.txt → Enter expected hash 2ef7bde608ce5404e97d5f042f95f89f1c232871.
+
+Output: "Integrity verified."
+
+Secure Delete:
+
+Click Secure Delete → Select example.txt.
+
+Output: example.txt is securely deleted.
