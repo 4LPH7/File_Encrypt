@@ -25,8 +25,8 @@ Ensure you have Python 3.9 or above installed.
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/secure-file-encryption.git
-   cd secure-file-encryption
+   git clone https://github.com/4LPH7/File_Encrypt.git
+   cd /File_Encrypt
    ```
 
 2. Install the required Python packages:
